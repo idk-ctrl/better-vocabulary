@@ -1,22 +1,15 @@
 ﻿using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
-using System;
+using BetterVocabulary.Application.Services.Base;
 
 namespace BetterVocabulary.Infrastructure
 {
-    public class DependencyRegistrar
+    public static class DependencyRegistrar
     {
-        public static IServiceCollection RegisterDependencies(this IServiceCollection services, IConfiguration cfg)
+        public static IServiceCollection RegisterDependencies(IServiceCollection services, IConfiguration cfg)
         {
             services
-                .AddDbContext<DbContext, DataContext>(options => ConfigureDbContext(cfg, options))
-                .AddTransient(typeof(IRepository<>), typeof(Repository<>))
-                .AddTransient<ICreditUnionDataService, CreditUnionDataService>()
-                .AddTransient<ILocationsProfilesDataProvider, LocationsProfilesDataProvider>()
-                .AddTransient<ICuServicesProviderService, CuServicesProviderService>()
-                .AddTransient(typeof(ICachingService<>), typeof(CachingService<>))
-                .AddSingleton(AutoMapperConfiguration.RegisterMappings().CreateMapper())
-                .AddLogging();
+                .AddTransient(typeof(IRepository), typeof(Repository));
             return services;
         }
     }
