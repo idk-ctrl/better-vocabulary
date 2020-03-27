@@ -7,8 +7,6 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "src", "src", "{52A8DF23-217
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "tests", "tests", "{6D7253EA-1299-45FA-B0A5-4BB1D1B840AC}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BetterVocabulary.Api", "src\BetterVocabulary.Api\BetterVocabulary.Api.csproj", "{0046BBD7-B49E-4462-9683-1AC6093649B2}"
-EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BetterVocabulary.Application", "src\BetterVocabulary.Application\BetterVocabulary.Application.csproj", "{EC1B4427-92EB-4D97-ADC4-C0D7ADB01D0E}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BetterVocabulary.Domain", "src\BetterVocabulary.Domain\BetterVocabulary.Domain.csproj", "{BBA47C25-1AEC-464F-B798-A9F85229A71D}"
@@ -19,20 +17,19 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BetterVocabulary.Infrastruc
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BetterVocabulary.Data", "src\BetterVocabulary.Data\BetterVocabulary.Data.csproj", "{4CDCE823-205E-469B-8176-305DC1887678}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BetterVocabulary.Api", "src\BetterVocabulary.Api\BetterVocabulary.Api.csproj", "{1FAD2478-7107-4076-88B2-E60A851E5B68}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
 		Release|Any CPU = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
-		{0046BBD7-B49E-4462-9683-1AC6093649B2}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{0046BBD7-B49E-4462-9683-1AC6093649B2}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{0046BBD7-B49E-4462-9683-1AC6093649B2}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{0046BBD7-B49E-4462-9683-1AC6093649B2}.Release|Any CPU.Build.0 = Release|Any CPU
 		{EC1B4427-92EB-4D97-ADC4-C0D7ADB01D0E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{EC1B4427-92EB-4D97-ADC4-C0D7ADB01D0E}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{EC1B4427-92EB-4D97-ADC4-C0D7ADB01D0E}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{EC1B4427-92EB-4D97-ADC4-C0D7ADB01D0E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{EC1B4427-92EB-4D97-ADC4-C0D7ADB01D0E}.Debug|Any CPU.Deploy.0 = Debug|Any CPU
 		{BBA47C25-1AEC-464F-B798-A9F85229A71D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{BBA47C25-1AEC-464F-B798-A9F85229A71D}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{BBA47C25-1AEC-464F-B798-A9F85229A71D}.Release|Any CPU.ActiveCfg = Release|Any CPU
@@ -49,17 +46,21 @@ Global
 		{4CDCE823-205E-469B-8176-305DC1887678}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{4CDCE823-205E-469B-8176-305DC1887678}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{4CDCE823-205E-469B-8176-305DC1887678}.Release|Any CPU.Build.0 = Release|Any CPU
+		{1FAD2478-7107-4076-88B2-E60A851E5B68}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{1FAD2478-7107-4076-88B2-E60A851E5B68}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{1FAD2478-7107-4076-88B2-E60A851E5B68}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{1FAD2478-7107-4076-88B2-E60A851E5B68}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
 	EndGlobalSection
 	GlobalSection(NestedProjects) = preSolution
-		{0046BBD7-B49E-4462-9683-1AC6093649B2} = {52A8DF23-2176-4C5B-AC10-0DFAEABE3A1A}
 		{EC1B4427-92EB-4D97-ADC4-C0D7ADB01D0E} = {52A8DF23-2176-4C5B-AC10-0DFAEABE3A1A}
 		{BBA47C25-1AEC-464F-B798-A9F85229A71D} = {52A8DF23-2176-4C5B-AC10-0DFAEABE3A1A}
 		{BD74A667-8B25-4711-B876-32ED2AFCB627} = {52A8DF23-2176-4C5B-AC10-0DFAEABE3A1A}
 		{9D71A7ED-4F75-46A1-ABE8-D941A2760D8F} = {52A8DF23-2176-4C5B-AC10-0DFAEABE3A1A}
 		{4CDCE823-205E-469B-8176-305DC1887678} = {52A8DF23-2176-4C5B-AC10-0DFAEABE3A1A}
+		{1FAD2478-7107-4076-88B2-E60A851E5B68} = {52A8DF23-2176-4C5B-AC10-0DFAEABE3A1A}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {72497173-0B2D-49C0-A148-6AC6AA745487}
